@@ -14,7 +14,7 @@ from flask import Flask, request, jsonify, render_template
 # Create a Flask app instance
 app = Flask(__name__)
 
-df = pd.read_csv("D:\\AI_Bot\\JK_TEK\\books.csv")
+df = pd.read_csv("books.csv")
 #print(df.head())
 #df.describe()
 
@@ -48,7 +48,7 @@ features=scaler.fit_transform(features)
 
 
 # Load the trained model
-model = joblib.load('D:\\AI_Bot\\JK_TEK\\nearest_neighbors_model.joblib')
+model = joblib.load('nearest_neighbors_model.joblib')
 dist, idlist = model.kneighbors(features)
 
 #function to recommend books based on a given book title
