@@ -1,0 +1,6 @@
+"table_name","column_name","data_type","character_maximum_length"
+"reviews","id","integer",NULL
+"reviews","book_id","integer",NULL
+"reviews","user_id","integer",NULL
+"reviews","review_text","character varying",1500
+"reviews","average_rating","real",NULL

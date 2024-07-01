@@ -1,0 +1,7 @@
+"table_name","column_name","data_type","character_maximum_length"
+"books","id","integer",NULL
+"books","title","character varying",800
+"books","author","character varying",800
+"books","jenre","character varying",20
+"books","year_published","date",NULL
+"books","average_rating","numeric",NULL
